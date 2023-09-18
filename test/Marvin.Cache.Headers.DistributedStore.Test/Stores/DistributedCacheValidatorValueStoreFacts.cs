@@ -223,7 +223,7 @@ public class DistributedCacheValidatorValueStoreFacts
         var distributedCacheKeyRetriever = new Mock<IRetrieveDistributedCacheKeys>();
         var storeKeySerializer = new Mock<IStoreKeySerializer>();
         var distributedCacheValidatorValueStore = new DistributedCacheValidatorValueStore(distributedCache.Object, distributedCacheKeyRetriever.Object, storeKeySerializer.Object);        
-        var storeKey = new StoreKey
+       var storeKey = new StoreKey
         {
             { "resourcePath", "/v1/gemeenten/11057" },
             { "queryString", string.Empty },
